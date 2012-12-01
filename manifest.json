@@ -1,0 +1,19 @@
+{
+  "name"       : "Zoho Remover",
+  "description": "Remove zoho widget from gmail",
+  "version"    : "0.0.0",
+  "manifest_version": 2,
+  "content_scripts":[
+      {
+         "matches":[
+            "*://mail.google.com/*"
+         ],
+         "js":[
+            "removeZoho.js"
+         ]
+      }
+   ],
+   "permissions":[
+      "*://mail.google.com/*"
+   ]
+}
