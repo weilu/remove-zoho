@@ -8,11 +8,8 @@ removeZoho = function(addedNode){
 
 mutationCallback = function(mutation){
   addedNodes = mutation.addedNodes;
-  if(addedNodes.length > 0){
-    for(var i=0; i<addedNodes.length; i++){
-      removeZoho(addedNodes[i]);
-    }
-  }
+  if(addedNodes.length > 0)
+    Array.prototype.slice.call(addedNodes).forEach(removeZoho)
 }
 
 window.onload = function(){
