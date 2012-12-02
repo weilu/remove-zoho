@@ -1,7 +1,7 @@
 {
   "name"       : "Zoho Remover",
   "description": "Remove zoho widget from gmail",
-  "version"    : "0.0.0",
+  "version"    : "0.0.1",
   "manifest_version": 2,
   "content_scripts":[
       {
